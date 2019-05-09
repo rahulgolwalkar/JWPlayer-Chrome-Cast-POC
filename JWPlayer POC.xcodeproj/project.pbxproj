@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E26C77D99ED4763C41D74E0 /* Pods_JWPlayer_POC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DBF5203137C4DC41EEA317A /* Pods_JWPlayer_POC.framework */; };
 		BBE084C12282F01C005D7F03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE084C02282F01C005D7F03 /* AppDelegate.swift */; };
 		BBE084C32282F01C005D7F03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE084C22282F01C005D7F03 /* ViewController.swift */; };
 		BBE084C62282F01C005D7F03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBE084C42282F01C005D7F03 /* Main.storyboard */; };
@@ -15,6 +16,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23F36E504C5A381A0C00ABCE /* Pods-JWPlayer POC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWPlayer POC.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWPlayer POC/Pods-JWPlayer POC.release.xcconfig"; sourceTree = "<group>"; };
+		2DBF5203137C4DC41EEA317A /* Pods_JWPlayer_POC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JWPlayer_POC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D2ACA48FA223591F2302B56 /* Pods-JWPlayer POC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWPlayer POC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWPlayer POC/Pods-JWPlayer POC.debug.xcconfig"; sourceTree = "<group>"; };
+		BB171F362284229600125300 /* JWPlayer POC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "JWPlayer POC.entitlements"; sourceTree = "<group>"; };
 		BBE084BD2282F01C005D7F03 /* JWPlayer POC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JWPlayer POC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBE084C02282F01C005D7F03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBE084C22282F01C005D7F03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +34,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E26C77D99ED4763C41D74E0 /* Pods_JWPlayer_POC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65B08F99DE230ABEDCF5E89A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D2ACA48FA223591F2302B56 /* Pods-JWPlayer POC.debug.xcconfig */,
+				23F36E504C5A381A0C00ABCE /* Pods-JWPlayer POC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BBE084B42282F01C005D7F03 = {
 			isa = PBXGroup;
 			children = (
 				BBE084BF2282F01C005D7F03 /* JWPlayer POC */,
 				BBE084BE2282F01C005D7F03 /* Products */,
+				65B08F99DE230ABEDCF5E89A /* Pods */,
+				D6312C14254E4DF97D01975C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +71,7 @@
 		BBE084BF2282F01C005D7F03 /* JWPlayer POC */ = {
 			isa = PBXGroup;
 			children = (
+				BB171F362284229600125300 /* JWPlayer POC.entitlements */,
 				BBE084C02282F01C005D7F03 /* AppDelegate.swift */,
 				BBE084C22282F01C005D7F03 /* ViewController.swift */,
 				BBE084C42282F01C005D7F03 /* Main.storyboard */,
@@ -64,6 +82,14 @@
 			path = "JWPlayer POC";
 			sourceTree = "<group>";
 		};
+		D6312C14254E4DF97D01975C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DBF5203137C4DC41EEA317A /* Pods_JWPlayer_POC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +97,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BBE084CF2282F01D005D7F03 /* Build configuration list for PBXNativeTarget "JWPlayer POC" */;
 			buildPhases = (
+				F74DA731322F7CCA1F44711F /* [CP] Check Pods Manifest.lock */,
 				BBE084B92282F01C005D7F03 /* Sources */,
 				BBE084BA2282F01C005D7F03 /* Frameworks */,
 				BBE084BB2282F01C005D7F03 /* Resources */,
+				9EE81ADD29E4DCC6FDBEAB2A /* [CP] Embed Pods Frameworks */,
+				7F1F4AE14D0E01AC2C5A59D4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +125,11 @@
 				TargetAttributes = {
 					BBE084BC2282F01C005D7F03 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.AccessWiFi = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -129,6 +163,67 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F1F4AE14D0E01AC2C5A59D4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JWPlayer POC/Pods-JWPlayer POC-resources.sh",
+				"${PODS_ROOT}/google-cast-sdk/GoogleCastSDK-ios-4.4.1_static/GoogleCast.framework/GoogleCastCoreResources.bundle",
+				"${PODS_ROOT}/google-cast-sdk/GoogleCastSDK-ios-4.4.1_static/GoogleCast.framework/GoogleCastUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleCastCoreResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleCastUIResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWPlayer POC/Pods-JWPlayer POC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EE81ADD29E4DCC6FDBEAB2A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JWPlayer POC/Pods-JWPlayer POC-frameworks.sh",
+				"${PODS_ROOT}/JWPlayer-SDK/JWPlayer_iOS_SDK.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JWPlayer_iOS_SDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWPlayer POC/Pods-JWPlayer POC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F74DA731322F7CCA1F44711F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JWPlayer POC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BBE084B92282F01C005D7F03 /* Sources */ = {
@@ -280,8 +375,10 @@
 		};
 		BBE084D02282F01D005D7F03 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D2ACA48FA223591F2302B56 /* Pods-JWPlayer POC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "JWPlayer POC/JWPlayer POC.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5VD6QYH3XG;
 				INFOPLIST_FILE = "JWPlayer POC/Info.plist";
@@ -298,8 +395,10 @@
 		};
 		BBE084D12282F01D005D7F03 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23F36E504C5A381A0C00ABCE /* Pods-JWPlayer POC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "JWPlayer POC/JWPlayer POC.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5VD6QYH3XG;
 				INFOPLIST_FILE = "JWPlayer POC/Info.plist";
