@@ -34,11 +34,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="210" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--Player View Controller-->
         <scene sceneID="8Gf-6T-Cms">
             <objects>
-                <viewController id="5uA-dk-XzK" sceneMemberID="viewController">
+                <viewController id="5uA-dk-XzK" customClass="PlayerViewController" customModule="JWPlayer_POC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nJi-z0-gb0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,6 +53,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="1gd-NP-fkb"/>
                     </view>
+                    <connections>
+                        <outlet property="playerContainerView" destination="FcJ-kZ-2kB" id="Ngd-ty-fp9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jZA-Jp-U5N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

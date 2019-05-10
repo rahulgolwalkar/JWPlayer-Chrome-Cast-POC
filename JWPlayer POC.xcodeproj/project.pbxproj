@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7E26C77D99ED4763C41D74E0 /* Pods_JWPlayer_POC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DBF5203137C4DC41EEA317A /* Pods_JWPlayer_POC.framework */; };
+		BB0CD6D1228443030034D181 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0CD6D0228443030034D181 /* PlayerViewController.swift */; };
 		BBE084C12282F01C005D7F03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE084C02282F01C005D7F03 /* AppDelegate.swift */; };
 		BBE084C32282F01C005D7F03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE084C22282F01C005D7F03 /* ViewController.swift */; };
 		BBE084C62282F01C005D7F03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBE084C42282F01C005D7F03 /* Main.storyboard */; };
@@ -19,6 +20,8 @@
 		23F36E504C5A381A0C00ABCE /* Pods-JWPlayer POC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWPlayer POC.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWPlayer POC/Pods-JWPlayer POC.release.xcconfig"; sourceTree = "<group>"; };
 		2DBF5203137C4DC41EEA317A /* Pods_JWPlayer_POC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JWPlayer_POC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D2ACA48FA223591F2302B56 /* Pods-JWPlayer POC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWPlayer POC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWPlayer POC/Pods-JWPlayer POC.debug.xcconfig"; sourceTree = "<group>"; };
+		BB0CD6AC228429EC0034D181 /* JWPlayer-POC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JWPlayer-POC-Bridging-Header.h"; sourceTree = "<group>"; };
+		BB0CD6D0228443030034D181 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		BB171F362284229600125300 /* JWPlayer POC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "JWPlayer POC.entitlements"; sourceTree = "<group>"; };
 		BBE084BD2282F01C005D7F03 /* JWPlayer POC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JWPlayer POC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBE084C02282F01C005D7F03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +81,8 @@
 				BBE084C72282F01D005D7F03 /* Assets.xcassets */,
 				BBE084C92282F01D005D7F03 /* LaunchScreen.storyboard */,
 				BBE084CC2282F01D005D7F03 /* Info.plist */,
+				BB0CD6AC228429EC0034D181 /* JWPlayer-POC-Bridging-Header.h */,
+				BB0CD6D0228443030034D181 /* PlayerViewController.swift */,
 			);
 			path = "JWPlayer POC";
 			sourceTree = "<group>";
@@ -232,6 +237,7 @@
 			files = (
 				BBE084C32282F01C005D7F03 /* ViewController.swift in Sources */,
 				BBE084C12282F01C005D7F03 /* AppDelegate.swift in Sources */,
+				BB0CD6D1228443030034D181 /* PlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +394,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ONE-Championship.JWPlayer-POC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/JWPlayer-POC-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -408,6 +415,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ONE-Championship.JWPlayer-POC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/JWPlayer-POC-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
